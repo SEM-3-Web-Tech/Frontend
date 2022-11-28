@@ -1,8 +1,8 @@
 import React from "react";
-import './tailwind.css'
-import Poke from './PokeBall.jpg'
-import Ultra from './ultra.jpg'
-import Master from './master.jpg'
+import '../styles/tailwind.css'
+//import Poke from '../PokeBall.jpg'
+//import Ultra from '../public/ultra.jpg'
+import Master from '../public/master.jpg'
 
 
 

@@ -1,40 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './styles/index.css';
 //import App from './App';
-import reportWebVitals from './reportWebVitals';
-import NavBar from './NavBar.js'
-import News from './News.js'
-import Marquee from './Marquee';
-import Footer from './Footer';
-import Features from './Features';
-import ScrollAnimation from "react-animate-on-scroll";
-import Joinus from './Joinus';
-import './animation.css'
-import Review from './Review';
+import reportWebVitals from './components/reportWebVitals';
+import NavBar from './components/NavBar.js'
+// import News from './components/News.js'
+import Marquee from './components/Marquee';
+import Footer from './components/Footer';
+import Features from './components/Features';
+import Joinus from './components/Joinus';
+import './styles/animation.css'
+import Review from './components/Review';
+import Comp from './components/Comp';
+import Login from './components/Login'
+import { BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
-    <NavBar/>
-    <Marquee/>
-    <Features/>
-    {/* rubberBand swing tada  */}
+    <Router>
+    <NavBar />
+    <Switch>
+      <Route exact path='/'> <><Marquee /><Comp /></></Route>
+      <Route path="/login" ><Login register={0}/></Route>
+      <Route path="/register" ><Login register={1}/></Route>
+      <Route path="/contact" ><Review /></Route>
+    </Switch>
+    <Footer />
+    </Router>
     
-    <ScrollAnimation animateIn='bounceInLeft' animateOut='bounceOutRight Fade' duration={1}>
-    <News/>
-    </ScrollAnimation>
-    
-    <ScrollAnimation animateIn='bounceInUp' animateOut='bounceOutUp' duration={1}>
-    <Review/>
-    </ScrollAnimation>
-    
-    <ScrollAnimation animateIn='bounceInRight' animateOut='bounceOutLeft' duration={1}>
-    <Joinus/>
-    </ScrollAnimation>
-    
-    <Footer/>
   </React.StrictMode>
 );
 

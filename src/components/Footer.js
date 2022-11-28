@@ -1,19 +1,18 @@
 import React from "react";
-import './tailwind.css'
+import '../styles/tailwind.css'
 
-class Footer extends React.Component{
-    render()
-    {
-        return(
+class Footer extends React.Component {
+    render() {
+        return (
             <div className="flex flex-row justify-evenly bg-black text-red p-8 mt-44">
                 <div>
-                Avanish Shenoy
+                    Avanish Shenoy
                 </div>
                 <div>
-                Charutha
+                    Charutha
                 </div>
                 <div>
-                B Moniiiiiiiiiiiiiish Moger
+                    B Monish Moger
                 </div>
             </div>
         )

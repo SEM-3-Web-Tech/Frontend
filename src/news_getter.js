@@ -1,13 +1,16 @@
-var myHeaders = new Headers();
-myHeaders.append("apikey", "nwvdSu5h5iT69T0RALnMV4h5XpUE7ayp");
 
-var requestOptions = {
-  method: 'GET',
-  redirect: 'follow',
-  headers: myHeaders
-};
+//import axios from 'axios';
 
-fetch("https://api.apilayer.com/financelayer/news?tickers=tickers&tags=tags&sources=sources&sort=sort&offset=offset&limit=limit&keywords=keywords&fallback=fallback&date=date", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+// const { default: axios } = require('axios');
+// //var request = require('request');
+
+// // replace the "demo" apikey below with your own key from https://www.alphavantage.co/support/#api-key
+// var url = 'https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=AAPL&topics=technology&apikey=demo';
+
+// axios.get('https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=AAPL&topics=technology&apikey=',{
+//             headers:{
+//                 'User-Agent': 'request'
+//             }
+//         }) .then(res=>res.json).then(res=>console.log(res))
+
+

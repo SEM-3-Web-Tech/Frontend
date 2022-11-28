@@ -15,6 +15,7 @@ module.exports = {
       white:"#fafafa",
       black:"#000",
       red:"#f00",
+      yellowgreen:"#9acd32"
     },
     
     extend: {
@@ -23,6 +24,9 @@ module.exports = {
       },
       right:{
         '3/25':"25%"
+      },
+      left:{
+        '450':"450px"
       }
     },
   },
