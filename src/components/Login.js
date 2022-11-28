@@ -21,6 +21,7 @@ class Login extends React.Component {
     }
     handleLogSubmit(e)
     {
+      e.preventDefault()
       const {email,pass}=this.state
       console.log(email,pass)
 
@@ -59,8 +60,7 @@ class Login extends React.Component {
       console.table(this.state)
       if(this.state.pass!=this.state.cpass)
       {
-        this.state.error=1;
-        this.state.msg="Passwords doesnt match"
+        this.setState({error:1,msg:"Incorrect Password"})
       }
       else{
       fetch("http://127.0.0.1:5000/db/register",{
