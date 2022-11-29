@@ -14,7 +14,7 @@ import Review from './components/Review';
 import Comp from './components/Comp';
 import Login from './components/Login'
 import { BrowserRouter as Router,Switch,Route} from 'react-router-dom';
-import App from "./home/src/App"
+import App from "./App"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
