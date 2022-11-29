@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Dashboard from "./components/dashboard";
 import StockContext from "./components/stockContex";
-import "./styles/App"
 export default function App() {
   const [stockSymbol,setStockSymbol]=useState("GOOG")
   return (

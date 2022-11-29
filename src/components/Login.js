@@ -46,7 +46,7 @@ class Login extends React.Component {
         else if(data.data)
         {
           window.localStorage.setItem("token",data.data)
-          window.location.href="/"
+          window.location.href="/dashboard"
         }
         else{
           this.setState({error:1,msg:"Something Went wrong!"})

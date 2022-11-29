@@ -14,8 +14,7 @@ import Review from './components/Review';
 import Comp from './components/Comp';
 import Login from './components/Login'
 import { BrowserRouter as Router,Switch,Route} from 'react-router-dom';
-
-
+import App from "./home/src/App"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,7 +26,7 @@ root.render(
       <Route exact path='/'> <><Marquee /><Comp /></></Route>
       <Route path="/login" ><Login register={0}/></Route>
       <Route path="/register" ><Login register={1}/></Route>
-      <Route path="/contact" ><Review /></Route>
+      <Route path="/dashboard" ><App /></Route>
     </Switch>
     <Footer />
     </Router>
